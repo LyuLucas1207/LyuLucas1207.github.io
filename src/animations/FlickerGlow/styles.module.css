@@ -41,10 +41,3 @@
     transform: translateX(120%);
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .wrap:hover::after {
-    animation: none;
-    opacity: 0.4;
-  }
-}

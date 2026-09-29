@@ -270,11 +270,3 @@
     display: none;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .mobileLink {
-    opacity: 1;
-    transform: none;
-    animation: none;
-  }
-}

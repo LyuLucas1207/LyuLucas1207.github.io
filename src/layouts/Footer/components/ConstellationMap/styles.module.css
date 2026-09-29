@@ -206,9 +206,3 @@
     display: flex;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .planetGroup * {
-    animation: none !important;
-  }
-}
