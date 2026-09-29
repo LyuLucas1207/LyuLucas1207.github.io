@@ -1,0 +1,69 @@
+.hoverTooltip {
+  position: absolute;
+  right: 1.35rem;
+  bottom: 1.5rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--color-primary) 16%, transparent);
+  border-radius: var(--radius-card) var(--radius-card) var(--radius-input) var(--radius-card);
+  background: color-mix(in srgb, var(--color-bg) 78%, transparent);
+  backdrop-filter: blur(22px) saturate(1.12);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.hoverTooltipVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hoverSystem {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-primary) 68%, var(--color-fg-heading) 32%);
+}
+
+.hoverLabel {
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+}
+
+@media (max-width: 960px) {
+  .hoverTooltip {
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hoverTooltip {
+    left: max(0.5rem, env(safe-area-inset-left, 0px));
+    right: max(0.5rem, env(safe-area-inset-right, 0px));
+    bottom: calc(7.35rem + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    max-width: none;
+    padding: 0.62rem 0.8rem;
+    border-radius: var(--radius-input);
+    z-index: 4;
+  }
+
+  .hoverSystem {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hoverLabel {
+    font-size: 0.88rem;
+    line-height: 1.25;
+  }
+}
+

@@ -1,0 +1,88 @@
+.hero {
+  position: relative;
+  padding: clamp(2rem, 5vh, 4rem) 0 clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.topRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.index {
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  color: var(--color-fg-muted);
+}
+
+.rule {
+  height: 1px;
+  width: 100%;
+  background: color-mix(in srgb, var(--color-border-2) 70%, transparent);
+}
+
+.headlineWrap {
+  overflow: visible;
+  margin: clamp(0.6rem, 2vh, 1.4rem) 0 clamp(0.4rem, 1.5vh, 1rem);
+}
+
+.headline {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(3.4rem, 13.5vw, 11.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  color: var(--color-fg-heading);
+}
+
+.subGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: end;
+  gap: clamp(1.2rem, 4vw, 4rem);
+  padding: clamp(1rem, 2.5vh, 1.8rem) 0 clamp(1.4rem, 3vh, 2.2rem);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2.4vw, 1.9rem);
+  line-height: 1.32;
+  color: var(--color-fg-text);
+}
+
+.description {
+  margin: 0;
+  max-width: 36ch;
+  justify-self: end;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-fg-muted);
+}
+
+@media (max-width: 860px) {
+  .subGrid {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .description {
+    justify-self: start;
+  }
+}

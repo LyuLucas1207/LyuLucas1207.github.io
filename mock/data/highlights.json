@@ -1,0 +1,290 @@
+[
+  {
+    "id": "systems-first",
+    "title": {
+      "zh": "系统优先的思考方式",
+      "en": "Systems-first thinking",
+      "fr": "Une pensée système d'abord"
+    },
+    "subtitle": {
+      "zh": "先有结构，再有修饰",
+      "en": "Structure before flourish",
+      "fr": "La structure avant l'ornement"
+    },
+    "description": {
+      "zh": "我更偏爱那些表层像被认真设计过、底层又能被继续组合的产品。从 NFX compose 布局到 React 路由边界，模块替换成本决定架构是否诚实。",
+      "en": "I prefer products that feel authored on the surface and composable underneath. From NFX compose layouts to React route boundaries, swap cost tells you if the architecture is honest.",
+      "fr": "Je préfère les produits travaillés en surface et composables en profondeur — le coût de remplacement des modules révèle l'honnêteté de l'architecture."
+    },
+    "stat": {
+      "zh": "架构",
+      "en": "Architecture",
+      "fr": "Architecture"
+    },
+    "icon": "Orbit"
+  },
+  {
+    "id": "tasteful-motion",
+    "title": {
+      "zh": "克制而有品味的动效",
+      "en": "Tasteful motion",
+      "fr": "Animation avec goût"
+    },
+    "subtitle": {
+      "zh": "节奏，而不是噪音",
+      "en": "Rhythm, not noise",
+      "fr": "Le rythme, pas le bruit"
+    },
+    "description": {
+      "zh": "动画应该服务于阅读顺序、空间连续性与触感清晰，而不是炫耀自己。Pinned rail、diagonal drift、纸飞机 MotionPath 都是同一套 choreographic grammar。",
+      "en": "Animation should support reading order, continuity, and tactile clarity — not show off. Pinned rails, diagonal drift, and voyager MotionPath share one choreographic grammar.",
+      "fr": "L'animation sert l'ordre de lecture et la continuité — rails épinglés, dérive diagonale et voyager partagent une grammaire chorégraphique."
+    },
+    "stat": {
+      "zh": "动效",
+      "en": "Motion",
+      "fr": "Mouvement"
+    },
+    "icon": "Sparkles"
+  },
+  {
+    "id": "cross-discipline",
+    "title": {
+      "zh": "跨学科的工作带宽",
+      "en": "Cross-discipline range",
+      "fr": "Amplitude transversale"
+    },
+    "subtitle": {
+      "zh": "设计与工程相遇",
+      "en": "Design meets engineering",
+      "fr": "Design rencontre ingénierie"
+    },
+    "description": {
+      "zh": "可以在界面评审、Verilog 时序报告、Kafka topic 命名与产品逻辑之间自然切换。CpE 背景不是分散注意力，是切换倍率。",
+      "en": "Comfortable moving between UI review, Verilog timing reports, Kafka topic naming, and product logic. CpE background is a gear multiplier, not distraction.",
+      "fr": "À l'aise entre revue UI, timing Verilog, nommage Kafka et logique produit — le génie informatique comme multiplicateur."
+    },
+    "stat": {
+      "zh": "范围",
+      "en": "Range",
+      "fr": "Champ"
+    },
+    "icon": "Radar"
+  },
+  {
+    "id": "backend-depth",
+    "title": {
+      "zh": "后端与分布式实践",
+      "en": "Backend & distributed practice",
+      "fr": "Backend et distribué"
+    },
+    "subtitle": {
+      "zh": "服务边界清晰",
+      "en": "Clear service boundaries",
+      "fr": "Frontières de service claires"
+    },
+    "description": {
+      "zh": "Go Fiber + gRPC + Kafka 流水线、FastAPI 领域模块、以及 CQRS 仓储模式——关注失败模式、重试语义与 poison topic，而不只是 happy path CRUD。",
+      "en": "Go Fiber + gRPC + Kafka pipelines, FastAPI domain modules, CQRS repos — focus on failure modes, retry semantics, poison topics, not just happy-path CRUD.",
+      "fr": "Pipelines Go/Kafka, modules FastAPI, CQRS — modes d'échec, retries, poison topics, pas seulement CRUD nominal."
+    },
+    "stat": {
+      "zh": "后端",
+      "en": "Backend",
+      "fr": "Backend"
+    },
+    "icon": "Cpu"
+  },
+  {
+    "id": "infra-ops",
+    "title": {
+      "zh": "私有基础设施运维",
+      "en": "Private infra operations",
+      "fr": "Ops infra privée"
+    },
+    "subtitle": {
+      "zh": "NAS 级可靠",
+      "en": "NAS-grade reliability",
+      "fr": "Fiabilité niveau NAS"
+    },
+    "description": {
+      "zh": "Traefik HTTPS、Compose 模块化、证书自动化与备份策略——在 homelab 环境练习 prod 心态：postmortem、runbook、staging diff。",
+      "en": "Traefik HTTPS, modular Compose, cert automation, backup strategy — homelab as prod mindset training: postmortems, runbooks, staging diffs.",
+      "fr": "Traefik, Compose modulaire, certs auto, sauvegardes — homelab comme entraînement prod : postmortems et runbooks."
+    },
+    "stat": {
+      "zh": "运维",
+      "en": "Ops",
+      "fr": "Ops"
+    },
+    "icon": "Layers"
+  },
+  {
+    "id": "security-baseline",
+    "title": {
+      "zh": "安全基线意识",
+      "en": "Security baseline instinct",
+      "fr": "Instinct sécurité"
+    },
+    "subtitle": {
+      "zh": "JWT · TLS · 最小权限",
+      "en": "JWT · TLS · least privilege",
+      "fr": "JWT · TLS · moindre privilège"
+    },
+    "description": {
+      "zh": "NFX-Vault 与 NFX-Identity 把 ACME、PEM 校验、bcrypt、RBAC 列表当作默认选项而非附加功能。Frontend 也不存储 long-lived secrets。",
+      "en": "NFX-Vault and NFX-Identity treat ACME, PEM validation, bcrypt, RBAC lists as defaults — not add-ons. Frontend never stores long-lived secrets.",
+      "fr": "Vault et Identity : ACME, PEM, bcrypt, RBAC par défaut ; pas de secrets longue durée côté client."
+    },
+    "stat": {
+      "zh": "安全",
+      "en": "Security",
+      "fr": "Sécurité"
+    },
+    "icon": "Shield"
+  },
+  {
+    "id": "performance-instinct",
+    "title": {
+      "zh": "性能直觉",
+      "en": "Performance instinct",
+      "fr": "Instinct performance"
+    },
+    "subtitle": {
+      "zh": "测量后再优化",
+      "en": "Measure before optimizing",
+      "fr": "Mesurer avant optimiser"
+    },
+    "description": {
+      "zh": "ScrollTrigger invalidateOnRefresh、React Query staleTime 竞态、FPGA timing slack——不同层级的「慢」有不同探针。Profiler 红条之前，先问用户觉得哪里重。",
+      "en": "ScrollTrigger invalidateOnRefresh, React Query staleTime races, FPGA timing slack — different layers of \"slow\" need different probes. Ask where it feels heavy before the profiler turns red.",
+      "fr": "invalidateOnRefresh, staleTime, timing slack — sonder où ça « pèse » avant le profiler."
+    },
+    "stat": {
+      "zh": "性能",
+      "en": "Perf",
+      "fr": "Perf"
+    },
+    "icon": "Zap"
+  },
+  {
+    "id": "typed-frontend",
+    "title": {
+      "zh": "强类型前端工程",
+      "en": "Typed frontend engineering",
+      "fr": "Frontend typé"
+    },
+    "subtitle": {
+      "zh": "nfx-ui · hooks · mock",
+      "en": "nfx-ui · hooks · mock",
+      "fr": "nfx-ui · hooks · mock"
+    },
+    "description": {
+      "zh": "makeUnifiedQuery 模式、camelCase 自动转换、CSS Modules 与 GSAP scope——类型与约定减少 scroll 动画页面上的 regression 面积。",
+      "en": "makeUnifiedQuery pattern, camelCase transforms, CSS Modules + GSAP scope — types and conventions shrink regression surface on scroll-heavy pages.",
+      "fr": "makeUnifiedQuery, camelCase, CSS Modules + GSAP — types et conventions réduisent les régressions."
+    },
+    "stat": {
+      "zh": "类型",
+      "en": "Types",
+      "fr": "Types"
+    },
+    "icon": "Code2"
+  },
+  {
+    "id": "i18n-delivery",
+    "title": {
+      "zh": "三语交付习惯",
+      "en": "Trilingual delivery habit",
+      "fr": "Livraison trilingue"
+    },
+    "subtitle": {
+      "zh": "en · 中文 · fr",
+      "en": "en · 中文 · fr",
+      "fr": "en · 中文 · fr"
+    },
+    "description": {
+      "zh": "Mock JSON 字段与 errors/langs 生成流程保持一致——早期 stress i18n 避免上线后补翻译债务。Footer 星球 label 也走同一套 key。",
+      "en": "Mock JSON fields align with errors/langs generation — stress i18n early to avoid translation debt. Footer planet labels use the same key pattern.",
+      "fr": "JSON mock aligné avec errors/langs — stress i18n tôt ; labels planètes footer même schéma."
+    },
+    "stat": {
+      "zh": "i18n",
+      "en": "i18n",
+      "fr": "i18n"
+    },
+    "icon": "Globe2"
+  },
+  {
+    "id": "hardware-craft",
+    "title": {
+      "zh": "硬件工艺感",
+      "en": "Hardware craft",
+      "fr": "Savoir-faire matériel"
+    },
+    "subtitle": {
+      "zh": "Verilog · 传感器 · 控制",
+      "en": "Verilog · sensors · control",
+      "fr": "Verilog · capteurs · contrôle"
+    },
+    "description": {
+      "zh": "六份 FPGA lab、能量回收烘干机 capstone、嵌入式 I²C 调试——寄存器思维帮助写更 predictable 的软件 state machine。",
+      "en": "Six FPGA labs, energy-recovery dryer capstone, embedded I²C debug — register thinking makes software state machines more predictable.",
+      "fr": "Six labs FPGA, capstone sécheuse, I²C embarqué — pensée registre pour state machines logicielles prévisibles."
+    },
+    "stat": {
+      "zh": "硬件",
+      "en": "Hardware",
+      "fr": "Matériel"
+    },
+    "icon": "CircuitBoard"
+  },
+  {
+    "id": "ai-mcp-surface",
+    "title": {
+      "zh": "AI / MCP 工具面",
+      "en": "AI / MCP tool surface",
+      "fr": "Surface outils AI / MCP"
+    },
+    "subtitle": {
+      "zh": "数据面共享",
+      "en": "Shared data plane",
+      "fr": "Plan de données partagé"
+    },
+    "description": {
+      "zh": "NFX-News FastMCP 包把 crawl、analytics、search 暴露给 AI client——ops 与模型读同一 Kafka 事件流，而不是平行 silo。",
+      "en": "NFX-News FastMCP packs expose crawl, analytics, search to AI clients — ops and models read the same Kafka stream, not parallel silos.",
+      "fr": "FastMCP NFX-News : crawl, analytics, search pour clients IA sur le même flux Kafka."
+    },
+    "stat": {
+      "zh": "MCP",
+      "en": "MCP",
+      "fr": "MCP"
+    },
+    "icon": "Binary"
+  },
+  {
+    "id": "documentation-culture",
+    "title": {
+      "zh": "文档即产品",
+      "en": "Docs as product",
+      "fr": "Docs comme produit"
+    },
+    "subtitle": {
+      "zh": "Runbook · diagram · changelog",
+      "en": "Runbook · diagram · changelog",
+      "fr": "Runbook · diagramme · changelog"
+    },
+    "description": {
+      "zh": "NFX Documentation Hub 与每次 incident postmortem 同级重要——没有 runbook 的 compose stack 只是个人记忆，不可交接。",
+      "en": "NFX Documentation Hub ranks with incident postmortems — compose stacks without runbooks are personal memory, not handoff-ready systems.",
+      "fr": "Hub doc = postmortems ; stack sans runbook = mémoire personnelle, pas système transmissible."
+    },
+    "stat": {
+      "zh": "文档",
+      "en": "Docs",
+      "fr": "Docs"
+    },
+    "icon": "Workflow"
+  }
+]

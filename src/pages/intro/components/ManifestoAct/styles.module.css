@@ -1,0 +1,146 @@
+.manifesto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--color-bg);
+  padding: clamp(1.2rem, 3vh, 2rem) clamp(1.4rem, 5vw, 5rem)
+    clamp(1.4rem, 3vh, 2rem);
+}
+
+.manifestoGrid {
+  z-index: 0;
+}
+
+.manifesto[data-intro-waiting] {
+  pointer-events: none;
+}
+
+.manifestoLabel {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  margin: 0 0 clamp(1rem, 2.5vh, 1.6rem);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+
+.manifestoStage {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-height: min(72vh, 680px);
+  overflow: hidden;
+}
+
+.manifestoSlide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(220px, 0.92fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+  will-change: transform, opacity;
+}
+
+.manifestoSlideFlip {
+  grid-template-columns: minmax(220px, 0.92fr) minmax(0, 1.08fr);
+}
+
+.manifestoSlideFlip .manifestoTextCol {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.manifestoSlideFlip .manifestoVisual {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.manifestoTextCol {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2.5vh, 1.6rem);
+  will-change: transform, opacity;
+}
+
+.manifestoText {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.8vw, 2.35rem);
+  line-height: 1.42;
+  color: var(--color-fg-heading);
+  transition: color 0.32s ease, text-shadow 0.32s ease;
+}
+
+.manifestoText:hover {
+  color: color-mix(in srgb, var(--color-primary) 58%, var(--color-fg-heading) 42%);
+  text-shadow: 0 0 18px rgba(var(--color-primary-rgb), 0.18);
+}
+
+.manifestoVisual {
+  color: var(--color-primary);
+  padding: clamp(1rem, 2vw, 1.4rem);
+  border: 1px solid color-mix(in srgb, var(--color-border-2) 65%, transparent);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--color-bg) 94%, transparent);
+  will-change: transform, opacity;
+}
+
+.manifestoVisual svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 860px) {
+  .manifesto {
+    min-height: auto;
+  }
+
+  .manifestoStage {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2.5rem, 6vh, 4rem);
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .manifestoSlide,
+  .manifestoSlideFlip {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .manifestoSlideFlip .manifestoTextCol,
+  .manifestoSlideFlip .manifestoVisual {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .manifestoVisual {
+    order: -1;
+    max-width: 18rem;
+    transform: none !important;
+  }
+
+  .manifestoTextCol {
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .manifestoTextCol,
+  .manifestoVisual {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

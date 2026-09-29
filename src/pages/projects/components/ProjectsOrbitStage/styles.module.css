@@ -1,0 +1,64 @@
+.stage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.svg {
+  width: min(820px, 92vw);
+  height: auto;
+  aspect-ratio: 800 / 600;
+  max-height: min(62vh, 560px);
+  overflow: visible;
+  opacity: 0.9;
+}
+
+.field {
+  color: var(--color-primary);
+}
+
+.dust {
+  fill: color-mix(in srgb, var(--color-primary) 40%, transparent);
+  opacity: 0.35;
+}
+
+.ring {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.85;
+  opacity: 0.22;
+}
+
+.coreRing {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  opacity: 0.35;
+}
+
+.core {
+  fill: currentColor;
+  opacity: 0.95;
+}
+
+.planet {
+  fill: currentColor;
+  opacity: 0.78;
+}
+
+.moon {
+  fill: var(--color-bg);
+  stroke: currentColor;
+  stroke-width: 1;
+  opacity: 0.7;
+}
+
+@media (max-width: 860px) {
+  .stage {
+    display: none;
+  }
+}

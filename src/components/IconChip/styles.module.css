@@ -1,0 +1,17 @@
+.chip {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.3s ease,
+    filter 0.3s ease;
+}
+
+.chip :global(svg) {
+  display: block;
+}

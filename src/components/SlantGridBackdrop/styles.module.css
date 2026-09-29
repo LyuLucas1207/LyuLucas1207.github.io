@@ -1,0 +1,31 @@
+.root {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  mask-image: linear-gradient(225deg, transparent 0%, transparent 28%, rgba(0, 0, 0, 0.28) 52%, #000 82%);
+  -webkit-mask-image: linear-gradient(225deg, transparent 0%, transparent 28%, rgba(0, 0, 0, 0.28) 52%, #000 82%);
+}
+
+.track {
+  width: 240%;
+  height: 130%;
+  margin-top: -8%;
+  margin-left: -20%;
+  will-change: transform;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.line {
+  stroke: color-mix(in srgb, var(--color-primary) 16%, var(--color-border-2));
+  stroke-width: 0.65;
+}
+
+.dot {
+  fill: color-mix(in srgb, var(--color-primary) 32%, transparent);
+}

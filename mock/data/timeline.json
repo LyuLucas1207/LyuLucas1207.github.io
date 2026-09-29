@@ -1,0 +1,518 @@
+[
+  {
+    "id": "present-ubc",
+    "period": {
+      "zh": "2023 — 现在",
+      "en": "2023 — Now",
+      "fr": "2023 — Aujourd'hui"
+    },
+    "title": {
+      "zh": "UBC 计算机工程 · 本科",
+      "en": "UBC Computer Engineering — BASc",
+      "fr": "Génie informatique UBC — BASc"
+    },
+    "company": {
+      "zh": "不列颠哥伦比亚大学 · Co-op 轨道",
+      "en": "University of British Columbia · Co-op track",
+      "fr": "Université de la Colombie-Britannique · Co-op"
+    },
+    "summary": {
+      "zh": "数字逻辑、嵌入式、软件系统与 capstone 并行；预计 2027 年 5 月毕业，面向 new-grad backend / full-stack 岗位。",
+      "en": "Digital logic, embedded, software systems, and capstone in parallel — graduating May 2027, targeting new-grad backend / full-stack roles.",
+      "fr": "Logique numérique, embarqué, systèmes logiciels et capstone — diplôme mai 2027, postes backend / full-stack junior."
+    },
+    "achievements": {
+      "zh": [
+        "Dean's List 2024–2025；核心课程 GPA 保持 Applied Science 门槛以上。",
+        "FPGA 课程群单学期完成 6 个 Verilog 项目并提交 timing 报告。",
+        "Pure Scan Flutter 应用从设计到可发布 build pipeline。",
+        "Ice Ribbon 机器人赛事现场运维与双语协调。"
+      ],
+      "en": [
+        "Dean's List 2024–2025; core coursework GPA above Applied Science threshold.",
+        "Six Verilog FPGA projects in one term with timing closure reports.",
+        "Pure Scan Flutter app from design through publish-ready build pipeline.",
+        "Ice Ribbon robotics finals field ops and bilingual crew coordination."
+      ],
+      "fr": [
+        "Dean's List 2024–2025 ; GPA cours cœur au-dessus du seuil.",
+        "Six projets Verilog FPGA en un trimestre avec rapports timing.",
+        "Pure Scan Flutter jusqu'au pipeline publiable.",
+        "Ops terrain finales robotique Ice Ribbon et coordination bilingue."
+      ]
+    }
+  },
+  {
+    "id": "nfx-platform",
+    "period": {
+      "zh": "2024 — 现在",
+      "en": "2024 — Now",
+      "fr": "2024 — Aujourd'hui"
+    },
+    "title": {
+      "zh": "NebulaForgeX 平台负责人",
+      "en": "NebulaForgeX platform owner",
+      "fr": "Responsable plateforme NebulaForgeX"
+    },
+    "company": {
+      "zh": "个人 / 开源组织 NebulaForgeX",
+      "en": "Personal / NebulaForgeX org",
+      "fr": "Personnel / org NebulaForgeX"
+    },
+    "summary": {
+      "zh": "NAS 级私有基础设施：数据栈、边缘代理、身份、证书、新闻 crawl、对象存储与文档 hub — 16+ 公共仓库。",
+      "en": "NAS-grade private infrastructure: data stack, edge proxy, identity, certs, news crawl, object storage, docs hub — 16+ public repos.",
+      "fr": "Infra privée NAS : data stack, edge, identité, certs, crawl actu, stockage, docs — 16+ dépôts publics."
+    },
+    "achievements": {
+      "zh": [
+        "NFX-Stack：MySQL/Postgres/Mongo/Redis/Kafka compose 模块化部署。",
+        "NFX-Vault：ACME + Kafka 续期流水线 + React 控制台。",
+        "NFX-News：11+ 源 crawl + FastMCP analytics 工具面。",
+        "NFX-Identity：Go Fiber/gRPC/CQRS + JWT RBAC 基线。"
+      ],
+      "en": [
+        "NFX-Stack: modular MySQL/Postgres/Mongo/Redis/Kafka compose deployment.",
+        "NFX-Vault: ACME + Kafka renewal pipeline + React console.",
+        "NFX-News: 11+ source crawl + FastMCP analytics surface.",
+        "NFX-Identity: Go Fiber/gRPC/CQRS + JWT RBAC baseline."
+      ],
+      "fr": [
+        "NFX-Stack : compose modulaire multi-datastores.",
+        "NFX-Vault : ACME + Kafka + console React.",
+        "NFX-News : crawl 11+ sources + FastMCP.",
+        "NFX-Identity : Go Fiber/gRPC/CQRS + RBAC JWT."
+      ]
+    }
+  },
+  {
+    "id": "lyu-star-realm",
+    "period": {
+      "zh": "2025 — 现在",
+      "en": "2025 — Now",
+      "fr": "2025 — Aujourd'hui"
+    },
+    "title": {
+      "zh": "Lyu Star Realm 创意站点",
+      "en": "Lyu Star Realm creative site",
+      "fr": "Site créatif Lyu Star Realm"
+    },
+    "company": {
+      "zh": "个人作品集 · Lsr-Web",
+      "en": "Personal portfolio · Lsr-Web",
+      "fr": "Portfolio · Lsr-Web"
+    },
+    "summary": {
+      "zh": "React 19 + GSAP + Lenis 的多页叙事站点：pinned rail、diagonal drift、site-wide voyager、i18n mock API 与未来 hook 对齐。",
+      "en": "React 19 + GSAP + Lenis multi-page narrative: pinned rails, diagonal drift, site-wide voyager, i18n mock API aligned with future hooks.",
+      "fr": "Récit multi-pages React 19 + GSAP + Lenis : rails épinglés, dérive, voyager, mock i18n aligné hooks."
+    },
+    "achievements": {
+      "zh": [
+        "Intro 五幕拆分 + horizontal wall 12 panel scroll choreography。",
+        "Footer 太阳系 SVG 导航 — 每星球独立动画语法。",
+        "纸飞机 MotionPath autoRotate 全站伴飞。",
+        "Mock 数据每区块 10+ 条以 stress scroll 动画。"
+      ],
+      "en": [
+        "Intro five-act split + 12-panel horizontal wall scroll choreography.",
+        "Footer solar-system SVG nav — unique animation grammar per planet.",
+        "Paper-plane MotionPath autoRotate site companion.",
+        "10+ mock items per block to stress scroll animation."
+      ],
+      "fr": [
+        "Intro cinq actes + mur 12 panneaux.",
+        "Footer système solaire SVG — animation par planète.",
+        "Avion papier MotionPath autoRotate.",
+        "10+ mocks par bloc pour stress scroll."
+      ]
+    }
+  },
+  {
+    "id": "enterprise-java",
+    "period": {
+      "zh": "2023 — 2024",
+      "en": "2023 — 2024",
+      "fr": "2023 — 2024"
+    },
+    "title": {
+      "zh": "Java 企业后端开发",
+      "en": "Java enterprise backend",
+      "fr": "Backend Java entreprise"
+    },
+    "company": {
+      "zh": "课程 + 个人项目 · Spring 生态",
+      "en": "Coursework + personal · Spring ecosystem",
+      "fr": "Cours + projets · écosystème Spring"
+    },
+    "summary": {
+      "zh": "Spring Boot HRM、音频 DSP 管道等 — REST API、JPA、事务边界与 OpenAPI 文档化。",
+      "en": "Spring Boot HRM, audio DSP pipeline — REST APIs, JPA, transaction boundaries, OpenAPI documentation.",
+      "fr": "Spring Boot HRM, pipeline audio DSP — REST, JPA, transactions, OpenAPI."
+    },
+    "achievements": {
+      "zh": [
+        "HRM：角色权限、 payroll 模块、审计日志。",
+        "Audio DSP：FFT 链路、滤波器链、Java 原生性能 profiling。",
+        "统一异常处理与 validation layer（Bean Validation）。",
+        "React admin 消费端对接 swagger-codegen 客户端。"
+      ],
+      "en": [
+        "HRM: RBAC, payroll modules, audit logs.",
+        "Audio DSP: FFT chain, filter pipeline, Java native perf profiling.",
+        "Unified exception handling + Bean Validation layer.",
+        "React admin consumes swagger-codegen client."
+      ],
+      "fr": [
+        "HRM : RBAC, paie, audits.",
+        "Audio DSP : FFT, filtres, profiling.",
+        "Exceptions unifiées + validation.",
+        "Admin React via client swagger-codegen."
+      ]
+    }
+  },
+  {
+    "id": "mobile-flutter",
+    "period": {
+      "zh": "2024",
+      "en": "2024",
+      "fr": "2024"
+    },
+    "title": {
+      "zh": "Flutter 跨平台交付",
+      "en": "Flutter cross-platform delivery",
+      "fr": "Livraison Flutter"
+    },
+    "company": {
+      "zh": "Pure Scan · 个人项目",
+      "en": "Pure Scan · personal project",
+      "fr": "Pure Scan · projet personnel"
+    },
+    "summary": {
+      "zh": "Material 3 QR 工具链 — camera pipeline、权限 flow、offline 行为与 share intent。",
+      "en": "Material 3 QR toolkit — camera pipeline, permission flows, offline behavior, share intents.",
+      "fr": "Boîte à outils QR Material 3 — caméra, permissions, offline, partage."
+    },
+    "achievements": {
+      "zh": [
+        "iOS/Android 权限 fallback 三屏统一 flow。",
+        "亮度与对焦策略优化反光场景扫描成功率。",
+        "Widget test + integration test 覆盖核心 parse path。",
+        "App icon / splash 与 theme extension 一致。"
+      ],
+      "en": [
+        "Unified three-screen permission fallback iOS/Android.",
+        "Exposure/focus tuning for reflective scan scenarios.",
+        "Widget + integration tests on core parse path.",
+        "Icon/splash aligned with theme extension."
+      ],
+      "fr": [
+        "Flux permission trois écrans unifié.",
+        "Exposition/focus pour scans réfléchissants.",
+        "Tests widget + intégration parse.",
+        "Icône/splash cohérents theme."
+      ]
+    }
+  },
+  {
+    "id": "cv-ml-exploration",
+    "period": {
+      "zh": "2024",
+      "en": "2024",
+      "fr": "2024"
+    },
+    "title": {
+      "zh": "计算机视觉 / 手势识别",
+      "en": "Computer vision / gestures",
+      "fr": "Vision / gestes"
+    },
+    "company": {
+      "zh": "UBC 课程 + 个人实验",
+      "en": "UBC coursework + experiments",
+      "fr": "Cours UBC + expériences"
+    },
+    "summary": {
+      "zh": "MediaPipe hand landmarks + 自定义 gesture classifier — latency profiling 与模块化 inference stages。",
+      "en": "MediaPipe hand landmarks + custom gesture classifier — latency profiling and modular inference stages.",
+      "fr": "Landmarks MediaPipe + classifieur gestes — latence et inférence modulaire."
+    },
+    "achievements": {
+      "zh": [
+        "Real-time loop 在 laptop CPU 上稳定 30fps 级。",
+        "Gesture vocabulary 文档化供 future embedded port。",
+        "OpenCV 预处理 pipeline 可切换 night-mode exposure。",
+        "实验日志归档为 thesis related work 引用。"
+      ],
+      "en": [
+        "Real-time loop stable ~30fps on laptop CPU.",
+        "Gesture vocabulary documented for future embedded port.",
+        "OpenCV preprocess pipeline with night-mode exposure toggle.",
+        "Experiment logs archived for thesis related work."
+      ],
+      "fr": [
+        "Boucle temps réel ~30 fps CPU portable.",
+        "Vocabulaire gestes documenté pour embarqué.",
+        "Prétraitement OpenCV mode nuit.",
+        "Logs pour travaux connexes thèse."
+      ]
+    }
+  },
+  {
+    "id": "fpga-cpen",
+    "period": {
+      "zh": "2024",
+      "en": "2024",
+      "fr": "2024"
+    },
+    "title": {
+      "zh": "CPEN FPGA 数字设计",
+      "en": "CPEN FPGA digital design",
+      "fr": "Design numérique FPGA CPEN"
+    },
+    "company": {
+      "zh": "UBC · 电子与计算机工程 lab",
+      "en": "UBC · ECE labs",
+      "fr": "UBC · labos ECE"
+    },
+    "summary": {
+      "zh": "Verilog 项目群：Organ、iPod UI、PicoBlaze scope、RC4、DDS+Nios II — timing closure 与 simulation benches。",
+      "en": "Verilog cluster: Organ, iPod UI, PicoBlaze scope, RC4, DDS+Nios II — timing closure and simulation benches.",
+      "fr": "Cluster Verilog : orgue, iPod, scope PicoBlaze, RC4, DDS+Nios II — timing et benches."
+    },
+    "achievements": {
+      "zh": [
+        "DDS 设计 50MHz 目标下 setup slack 由负转正。",
+        "RC4 pipelined keystream 吞吐 benchmark 文档化。",
+        "PicoBlaze 汇编 scope trigger 与 SignalTap 联调。",
+        "Lab 报告含 TimeQuest PDF 与 demo 视频链接。"
+      ],
+      "en": [
+        "DDS design: setup slack negative → positive at 50MHz target.",
+        "RC4 pipelined keystream throughput benchmark documented.",
+        "PicoBlaze asm scope triggers tuned with SignalTap.",
+        "Lab reports include TimeQuest PDF + demo video links."
+      ],
+      "fr": [
+        "DDS : slack setup négatif → positif à 50 MHz.",
+        "RC4 pipeline benchmarké.",
+        "Scope PicoBlaze + SignalTap.",
+        "Rapports TimeQuest + vidéos demo."
+      ]
+    }
+  },
+  {
+    "id": "capstone-hardware",
+    "period": {
+      "zh": "2023",
+      "en": "2023",
+      "fr": "2023"
+    },
+    "title": {
+      "zh": "能量回收烘干机 Capstone",
+      "en": "Energy-recovery dryer capstone",
+      "fr": "Capstone sécheuse récupération"
+    },
+    "company": {
+      "zh": "Delta Secondary · Grade 12",
+      "en": "Delta Secondary · Grade 12",
+      "fr": "Delta Secondary · 12ᵉ année"
+    },
+    "summary": {
+      "zh": "热交换式衣物烘干原型 — 温湿度传感、Arduino 控制、加热/风扇/电机联动与效率数据。",
+      "en": "Heat-exchange dryer prototype — temp/humidity sensing, Arduino control, heater/fan/motor integration, efficiency data.",
+      "fr": "Prototype sécheuse échangeur — capteurs, Arduino, chauffage/ventilateur/moteur, données efficacité."
+    },
+    "achievements": {
+      "zh": [
+        "PID-style 控制 loop 与 serial 日志导出 CSV。",
+        "热效率计算与 physics justification 章节。",
+        "安全熔断：过温 cut-off 与 manual override。",
+        "Capstone 答辩 slides + 实物 demo。"
+      ],
+      "en": [
+        "PID-style control loop with serial log CSV export.",
+        "Thermal efficiency calculations + physics justification.",
+        "Safety cut-off on over-temp + manual override.",
+        "Capstone defense slides + physical demo."
+      ],
+      "fr": [
+        "Boucle type PID + logs CSV série.",
+        "Calculs efficacité thermique.",
+        "Coupure sur surtempérature.",
+        "Soutenance + démo physique."
+      ]
+    }
+  },
+  {
+    "id": "ice-ribbon-2024",
+    "period": {
+      "zh": "2024 暑假",
+      "en": "Summer 2024",
+      "fr": "Été 2024"
+    },
+    "title": {
+      "zh": "冰丝带赛事工作人员",
+      "en": "Ice Ribbon event staff",
+      "fr": "Staff événement Ice Ribbon"
+    },
+    "company": {
+      "zh": "国家速滑馆 · IRO 中国总决赛",
+      "en": "National Speed Skating Oval · IRO China finals",
+      "fr": "Patinoire olympique · finales IRO Chine"
+    },
+    "summary": {
+      "zh": "机器人竞赛现场：赛程协调、设备 troubleshooting、双语沟通与公众场景下的快速恢复。",
+      "en": "Robotics finals venue: schedule coordination, device troubleshooting, bilingual comms, fast recovery in public.",
+      "fr": "Finales robotique : planning, dépannage, bilingue, reprise rapide en public."
+    },
+    "achievements": {
+      "zh": [
+        "USB 供电故障 15 分钟内恢复计分系统。",
+        "裁判培训 quick reference 单页 cheat sheet。",
+        "与志愿者轮班 handoff checklist。",
+        "赛后 equipment inventory 与 cable labeling。"
+      ],
+      "en": [
+        "USB power failure — scoring restored within 15 minutes.",
+        "Judge training one-page quick reference.",
+        "Volunteer shift handoff checklist.",
+        "Post-event equipment inventory + cable labeling."
+      ],
+      "fr": [
+        "Panne USB — score rétabli en 15 min.",
+        "Aide-mémoire juges une page.",
+        "Checklist passation bénévoles.",
+        "Inventaire post-événement."
+      ]
+    }
+  },
+  {
+    "id": "delta-grade12",
+    "period": {
+      "zh": "2022 — 2023",
+      "en": "2022 — 2023",
+      "fr": "2022 — 2023"
+    },
+    "title": {
+      "zh": "BC 高三过渡年",
+      "en": "BC senior year transition",
+      "fr": "Année terminale CB"
+    },
+    "company": {
+      "zh": "Delta Secondary School",
+      "en": "Delta Secondary School",
+      "fr": "Delta Secondary School"
+    },
+    "summary": {
+      "zh": "落地加拿大后的学术与文化适应 — AP 课程、大学申请、英语 academic writing 与 capstone 选题。",
+      "en": "Academic and cultural adaptation after landing in Canada — AP courses, university apps, academic English, capstone selection.",
+      "fr": "Adaptation académique et culturelle — AP, candidatures universitaires, anglais académique, capstone."
+    },
+    "achievements": {
+      "zh": [
+        "UBC Engineering 申请 essay 强调 systems thinking。",
+        "Physics + Calculus 支撑后续 CpE 课程。",
+        "English diary 习惯延续为 life records 原型。",
+        "Capstone 选题连接 hardware interest 与 sustainability。"
+      ],
+      "en": [
+        "UBC Engineering application essays emphasized systems thinking.",
+        "Physics + Calculus foundation for CpE coursework.",
+        "English diary habit became life records prototype.",
+        "Capstone topic linked hardware interest + sustainability."
+      ],
+      "fr": [
+        "Essais UBC : pensée système.",
+        "Physique + calcul pour CpE.",
+        "Journal anglais → life records.",
+        "Capstone hardware + durabilité."
+      ]
+    }
+  },
+  {
+    "id": "ruisheng-cn",
+    "period": {
+      "zh": "2017 — 2022",
+      "en": "2017 — 2022",
+      "fr": "2017 — 2022"
+    },
+    "title": {
+      "zh": "武汉睿升学校",
+      "en": "Wuhan Ruisheng School",
+      "fr": "École Wuhan Ruisheng"
+    },
+    "company": {
+      "zh": "初中 — 高二（国内）",
+      "en": "Middle school — Grade 11 (China)",
+      "fr": "Collège — 2ᵉ lycée (Chine)"
+    },
+    "summary": {
+      "zh": "理科竞赛、Arduino 社团、早期编程与电路实验 — 工程词汇与 notebook 习惯的起点。",
+      "en": "STEM competitions, Arduino club, early programming and circuit labs — origin of engineering vocabulary and notebook habit.",
+      "fr": "Compétitions STEM, club Arduino, premiers labs — origine du vocabulaire ingénierie."
+    },
+    "achievements": {
+      "zh": [
+        "物理竞赛校队与实验报告写作训练。",
+        "信息学启蒙：C 语言与基础算法。",
+        "Arduino 社团：LED matrix 与简易 synth 项目。",
+        "高二后转 BC 完成高三衔接路径。"
+      ],
+      "en": [
+        "Physics competition team + lab report writing.",
+        "Informatics intro: C language and basic algorithms.",
+        "Arduino club: LED matrix and simple synth projects.",
+        "Transferred to BC for senior year completion."
+      ],
+      "fr": [
+        "Équipe physique + rapports labo.",
+        "Initiation info : C et algorithmes.",
+        "Club Arduino : matrice LED, synth simple.",
+        "Transfert CB pour année terminale."
+      ]
+    }
+  },
+  {
+    "id": "open-source-habit",
+    "period": {
+      "zh": "2020 — 现在",
+      "en": "2020 — Now",
+      "fr": "2020 — Aujourd'hui"
+    },
+    "title": {
+      "zh": "开源与公开构建习惯",
+      "en": "Open source & build in public",
+      "fr": "Open source et construire en public"
+    },
+    "company": {
+      "zh": "GitHub · NebulaForgeX",
+      "en": "GitHub · NebulaForgeX",
+      "fr": "GitHub · NebulaForgeX"
+    },
+    "summary": {
+      "zh": "12+ 公共仓库、README 架构图、issue template 与 CI badge — 把 homelab 实验变成可 fork 的参考实现。",
+      "en": "12+ public repos, README architecture diagrams, issue templates, CI badges — homelab experiments as forkable references.",
+      "fr": "12+ dépôts publics, diagrammes README, templates issue, badges CI — expériences homelab forkables."
+    },
+    "achievements": {
+      "zh": [
+        "NFX org 多 repo 统一 license 与 CONTRIBUTING。",
+        "Compose stack 版本 pin 与 changelog  discipline。",
+        "Lsr-Web 开源前端展示 mock-to-hook 模式。",
+        "Resume 与 site 项目 slug 1:1 对齐便于验证。"
+      ],
+      "en": [
+        "NFX org unified license + CONTRIBUTING across repos.",
+        "Compose stack version pins + changelog discipline.",
+        "Lsr-Web showcases mock-to-hook frontend pattern.",
+        "Resume and site project slugs 1:1 aligned for verification."
+      ],
+      "fr": [
+        "Org NFX : license + CONTRIBUTING unifiés.",
+        "Pin versions compose + changelog.",
+        "Lsr-Web : pattern mock-to-hook.",
+        "Slugs site = resume pour vérification."
+      ]
+    }
+  }
+]

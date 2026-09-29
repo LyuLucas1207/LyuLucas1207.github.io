@@ -1,0 +1,214 @@
+.root {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-border-2) 55%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border-2) 55%, transparent);
+}
+
+.label {
+  margin: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  min-height: 180px;
+  overflow: visible;
+}
+
+.orbitPath {
+  fill: none;
+  stroke: color-mix(in srgb, var(--color-fg-heading) 22%, transparent);
+  stroke-width: 0.55;
+  stroke-dasharray: 3 2.5;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ---- sun (sketch) ---- */
+
+.sunCore {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.75);
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.sunCorona {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.25);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.sunRay {
+  stroke: rgba(var(--color-primary-rgb), 0.35);
+  stroke-width: 0.45;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ---- right-rail chart (fills empty space) ---- */
+
+.chartRail {
+  stroke: color-mix(in srgb, var(--color-fg-heading) 18%, transparent);
+  vector-effect: non-scaling-stroke;
+}
+
+.chartLabel {
+  fill: var(--color-fg-muted);
+  font-size: 6px;
+  letter-spacing: 0.18em;
+  font-family: var(--font-body);
+}
+
+/* ---- planet groups ---- */
+
+.planetGroup {
+  cursor: pointer;
+  outline: none;
+}
+
+.planetGroup:focus-visible .planetLabel {
+  fill: var(--color-primary);
+}
+
+.planetArt {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.planetGroup:hover .planetLabel {
+  fill: var(--color-primary);
+}
+
+.planetLabel {
+  fill: var(--color-fg-text);
+  font-size: 7px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  pointer-events: none;
+  transition: fill 0.2s ease;
+}
+
+/* line-art planet tokens */
+
+.planetArt :global(.sketch-core) {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.85);
+  stroke-width: 0.75;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-pulse) {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.5);
+  stroke-width: 0.55;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-pulse.faint) {
+  stroke: rgba(var(--color-primary-rgb), 0.28);
+}
+
+.planetArt :global(.sketch-cross) {
+  stroke: rgba(var(--color-primary-rgb), 0.4);
+  stroke-width: 0.45;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-frame) {
+  fill: none;
+  stroke: color-mix(in srgb, var(--color-fg-heading) 35%, transparent);
+  stroke-width: 0.55;
+  stroke-dasharray: 2 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-tick) {
+  stroke: color-mix(in srgb, var(--color-fg-heading) 25%, transparent);
+  stroke-width: 0.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-ring) {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.55);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-ring.faint) {
+  stroke: rgba(var(--color-primary-rgb), 0.28);
+}
+
+.planetArt :global(.sketch-orbit) {
+  fill: none;
+  stroke: color-mix(in srgb, var(--color-fg-heading) 20%, transparent);
+  stroke-width: 0.45;
+  stroke-dasharray: 1.5 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-dot) {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.7);
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-tail) {
+  fill: none;
+  stroke: rgba(var(--color-primary-rgb), 0.5);
+  stroke-width: 0.55;
+  vector-effect: non-scaling-stroke;
+}
+
+.planetArt :global(.sketch-tail.faint) {
+  stroke: rgba(var(--color-primary-rgb), 0.25);
+}
+
+.mobileNav {
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobileLink {
+  padding: 0.35rem 0;
+  border: 0;
+  background: none;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-fg-text);
+  cursor: pointer;
+}
+
+.mobileLink:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 640px) {
+  .svg {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planetGroup * {
+    animation: none !important;
+  }
+}

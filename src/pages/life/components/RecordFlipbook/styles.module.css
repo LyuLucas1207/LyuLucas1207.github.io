@@ -1,0 +1,165 @@
+.flipbook {
+  position: relative;
+  margin-top: clamp(2rem, 5vh, 3rem);
+  padding: 0 clamp(1.4rem, 5vw, 5rem);
+}
+
+@media (min-width: 861px) {
+  .flipbook {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: clamp(2rem, 4vh, 3rem);
+  }
+}
+
+.flipbookHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: clamp(1.2rem, 3vh, 2rem);
+}
+
+.flipbookLabel {
+  margin: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+
+.flipbookCount {
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-primary);
+}
+
+.flipbookViewport {
+  position: relative;
+  height: min(72vh, 640px);
+  perspective: 1400px;
+  perspective-origin: 28% 50%;
+}
+
+.book {
+  position: relative;
+  width: min(520px, 92vw);
+  height: 100%;
+  margin-inline: auto;
+  transform-style: preserve-3d;
+}
+
+.book::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4%;
+  bottom: 4%;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--color-primary) 35%, transparent) 35%,
+    color-mix(in srgb, var(--color-primary) 35%, transparent) 65%,
+    transparent
+  );
+  z-index: 999;
+  pointer-events: none;
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.pageFace {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  height: 100%;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border: 1px solid color-mix(in srgb, var(--color-border-2) 70%, transparent);
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--color-bg) 96%, transparent);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px color-mix(in srgb, var(--color-bg) 80%, white 20%);
+}
+
+.pageFold {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: linear-gradient(
+    225deg,
+    color-mix(in srgb, var(--color-primary) 12%, transparent) 45%,
+    transparent 46%
+  );
+  pointer-events: none;
+}
+
+.pageIndex {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1;
+  color: color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+
+.pagePeriod {
+  margin: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+
+.pageTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.12;
+  color: var(--color-fg-heading);
+}
+
+.pageDetail {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--color-fg-text);
+}
+
+@media (max-width: 860px) {
+  .flipbookViewport {
+    height: auto;
+    perspective: none;
+  }
+
+  .book {
+    display: grid;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .page {
+    position: static;
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    transform: none !important;
+  }
+}

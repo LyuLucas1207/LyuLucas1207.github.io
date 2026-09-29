@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+  padding: clamp(2rem, 5vh, 4rem) 0 clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.stampRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin-bottom: clamp(1.2rem, 3vh, 2rem);
+}
+
+.stampIndex {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--color-primary);
+}
+
+.stampOf {
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  color: var(--color-fg-muted);
+}
+
+.stampLabel {
+  margin-left: auto;
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+
+.rulerWrap {
+  position: relative;
+  height: 1.4rem;
+  margin-bottom: clamp(1rem, 2.5vh, 1.6rem);
+}
+
+.ruler {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: color-mix(in srgb, var(--color-border-2) 80%, transparent);
+}
+
+.tick {
+  position: absolute;
+  bottom: 50%;
+  width: 1px;
+  height: 0.55rem;
+  background: color-mix(in srgb, var(--color-primary) 55%, transparent);
+  transform: translateX(-50%);
+}
+
+.tick:nth-child(odd) {
+  height: 0.85rem;
+}
+
+.headline {
+  margin: 0 0 clamp(1.2rem, 3vh, 2rem);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(3rem, 11vw, 8.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-fg-heading);
+  transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.headline:hover {
+  color: color-mix(in srgb, var(--color-primary) 70%, var(--color-fg-heading) 30%);
+  text-shadow: 0 0 18px rgba(var(--color-primary-rgb), 0.22);
+}
+
+.memo {
+  position: relative;
+  max-width: 42rem;
+  padding: clamp(1.2rem, 2.5vw, 1.8rem) clamp(1.4rem, 3vw, 2rem);
+  border: 1px solid color-mix(in srgb, var(--color-border-2) 70%, transparent);
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+}
+
+.memoCorner {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-top: 1px solid var(--color-primary);
+  border-left: 1px solid var(--color-primary);
+}
+
+.memoTitle {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+  line-height: 1.3;
+  color: var(--color-fg-text);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.memoTitle:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 14px rgba(var(--color-primary-rgb), 0.2);
+}
+
+.memoBody {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--color-fg-muted);
+}

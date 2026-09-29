@@ -1,0 +1,371 @@
+.page {
+  width: min(1320px, calc(100vw - clamp(2rem, 6vw, 5rem)));
+  margin-inline: auto;
+}
+
+.page [data-kind='education'] {
+  --kind: var(--color-primary);
+}
+
+.page [data-kind='project'] {
+  --kind: #a78bfa;
+}
+
+.page [data-kind='event'] {
+  --kind: #fbbf24;
+}
+
+.page [data-kind='milestone'] {
+  --kind: #fb7185;
+}
+
+/* ---------- chapters spine ---------- */
+
+.chapters {
+  padding: clamp(2rem, 6vh, 4.5rem) 0;
+}
+
+.spine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 5vh, 3.5rem);
+  padding-block: clamp(1rem, 3vh, 2rem);
+}
+
+.spineLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--color-primary) 65%, transparent) 12%,
+    color-mix(in srgb, var(--color-primary) 65%, transparent) 88%,
+    transparent
+  );
+  will-change: transform;
+}
+
+.chapter {
+  --kind: var(--color-primary);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.chapterDot {
+  position: absolute;
+  top: 0.55rem;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--kind);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--kind) 18%, transparent);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.chapterCard {
+  max-width: 34rem;
+}
+
+.chapterLeft .chapterCard {
+  grid-column: 1;
+  justify-self: end;
+  padding-right: clamp(2rem, 5vw, 4rem);
+  text-align: right;
+}
+
+.chapterRight .chapterCard {
+  grid-column: 2;
+  justify-self: start;
+  padding-left: clamp(2rem, 5vw, 4rem);
+}
+
+.chapterPeriod {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--kind);
+}
+
+.chapterTitle {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  line-height: 1.18;
+  color: var(--color-fg-heading);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.chapterTitle:hover {
+  color: color-mix(in srgb, var(--kind) 78%, var(--color-fg-heading) 22%);
+  text-shadow: 0 0 16px color-mix(in srgb, var(--kind) 24%, transparent);
+}
+
+.chapterBody {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-fg-muted);
+}
+
+.chapterLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+  padding: 0 0 0.3rem;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--kind) 65%, transparent);
+  background: none;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-fg-heading);
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.chapterLink:hover {
+  color: var(--kind);
+  border-color: var(--kind);
+}
+
+.chapterLinkIcon {
+  color: inherit;
+}
+
+.chapterLinkIcon:hover {
+  transform: rotate(-45deg) scale(1.15);
+}
+
+/* ---------- tag ticker ---------- */
+
+.tagTicker {
+  border-block: 1px solid color-mix(in srgb, var(--color-border-2) 70%, transparent);
+  padding-block: clamp(0.7rem, 2vh, 1.2rem);
+  margin-block: clamp(1.5rem, 4vh, 3rem);
+}
+
+.tagItem {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4.5vw, 3.4rem);
+  line-height: 1;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-fg-heading) 55%, transparent);
+  transition: -webkit-text-stroke-color 0.3s ease, filter 0.3s ease;
+}
+
+.tagItem:hover {
+  -webkit-text-stroke-color: var(--color-primary);
+  filter: drop-shadow(0 0 12px rgba(var(--color-primary-rgb), 0.35));
+}
+
+.tagItem em {
+  font-style: normal;
+  margin-inline: clamp(1rem, 2.5vw, 2rem);
+  font-size: 0.55em;
+  color: var(--color-primary);
+  -webkit-text-stroke: 0;
+}
+
+/* ---------- records stream ---------- */
+
+.stream {
+  padding-bottom: clamp(2rem, 5vh, 3.5rem);
+}
+
+.streamBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border-2) 70%, transparent);
+}
+
+.streamCount {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-fg-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.4rem, 3vw, 2.5rem);
+  padding-top: clamp(2rem, 5vh, 3.5rem);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border: 1px solid color-mix(in srgb, var(--color-border-2) 70%, transparent);
+  border-radius: var(--radius-card);
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--color-bg-2) 60%, transparent),
+    transparent 70%
+  );
+}
+
+.card:nth-child(2n) {
+  transform: translateY(clamp(1rem, 4vh, 3rem));
+}
+
+.cardMeta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cardType {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.cardTypeIcon {
+  color: var(--color-primary);
+}
+
+.cardTypeIcon:hover {
+  transform: rotate(90deg) scale(1.12);
+  filter: drop-shadow(0 0 8px rgba(var(--color-primary-rgb), 0.32));
+}
+
+.cardType span:not(:last-child)::after {
+  content: '·';
+  margin-left: 0.65rem;
+  opacity: 0.55;
+}
+
+.cardDate {
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-fg-muted);
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  line-height: 1.12;
+  color: var(--color-fg-heading);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.cardTitle:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 16px rgba(var(--color-primary-rgb), 0.22);
+}
+
+.cardExcerpt {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-fg-text);
+}
+
+.cardBody {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--color-fg-muted);
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-border-2) 50%, transparent);
+}
+
+.cardFooter em {
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+
+.cardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.cardTags span {
+  padding: 0.28rem 0.7rem;
+  border: 1px solid color-mix(in srgb, var(--color-border-2) 75%, transparent);
+  border-radius: 99px;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-text);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .spineLine {
+    left: 5px;
+  }
+
+  .chapter {
+    grid-template-columns: 1fr;
+  }
+
+  .chapterDot {
+    left: 5px;
+  }
+
+  .chapterLeft .chapterCard,
+  .chapterRight .chapterCard {
+    grid-column: 1;
+    justify-self: start;
+    padding-left: 2rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card:nth-child(2n) {
+    transform: none;
+  }
+}

@@ -1,0 +1,566 @@
+[
+  {
+    "id": "night-walk-interface",
+    "title": {
+      "zh": "夜路散步，顺便想界面",
+      "en": "Night walk, interface notes",
+      "fr": "Promenade nocturne, notes d'interface"
+    },
+    "type": "note",
+    "date": "2026-03-09",
+    "place": {
+      "zh": "温哥华 Kitsilano",
+      "en": "Kitsilano, Vancouver",
+      "fr": "Kitsilano, Vancouver"
+    },
+    "mood": {
+      "zh": "安静专注",
+      "en": "quiet focus",
+      "fr": "concentration tranquille"
+    },
+    "excerpt": {
+      "zh": "很多最好的布局决定，往往不是坐在屏幕前得出来的。",
+      "en": "Some of the best layout decisions arrive away from the screen.",
+      "fr": "Les meilleurs choix de mise en page naissent souvent loin de l'écran."
+    },
+    "body": {
+      "zh": "再次提醒自己：当我暂时离开实现细节，去想一页内容应该怎样呼吸时，节奏与层级往往会突然变得清楚。Footer 太阳系导航的星球间距、脉冲环错峰、以及纸飞机航线的 z-index 分层，都是在这条散步路线上想通的。回到书桌后，我把草图拍成照片，标注 scroll trigger 的 start/end，再写 mock 数据——内容密度本身也是动画测试的一部分。",
+      "en": "A reminder that pacing and hierarchy often become obvious when I stop staring at the implementation and think about how the page should breathe. The footer solar-system spacing, staggered pulse rings, and voyager z-index layering all clicked on this walk. Back at the desk I photographed the sketch, marked ScrollTrigger start/end points, then wrote mock data — content mass is part of motion QA.",
+      "fr": "Rappel : le rythme et la hiérarchie deviennent évidents quand je lâche l'implémentation et réfléchis à la respiration de la page. L'espacement du système solaire du footer, les anneaux pulsés décalés et le z-index du voyager se sont clarifiés sur cette promenade."
+    },
+    "tags": {
+      "zh": [
+        "设计",
+        "过程",
+        "笔记"
+      ],
+      "en": [
+        "design",
+        "process",
+        "notes"
+      ],
+      "fr": [
+        "design",
+        "processus",
+        "notes"
+      ]
+    }
+  },
+  {
+    "id": "keyboard-and-rain",
+    "title": {
+      "zh": "键盘、雨声、一个修好的 bug",
+      "en": "Keyboard, rain, one solved bug",
+      "fr": "Clavier, pluie, un bug résolu"
+    },
+    "type": "snapshot",
+    "date": "2026-02-18",
+    "place": {
+      "zh": "家里的书桌",
+      "en": "Home desk",
+      "fr": "Bureau à la maison"
+    },
+    "mood": {
+      "zh": "收拢",
+      "en": "contained",
+      "fr": "recueilli"
+    },
+    "excerpt": {
+      "zh": "一个很小的技术修复，也足以重新校准整天的情绪温度。",
+      "en": "A tiny technical fix can reset the emotional temperature of a whole day.",
+      "fr": "Une minuscule correction technique peut recalibrer toute la journée."
+    },
+    "body": {
+      "zh": "追到了一个状态同步问题，它让某条流程一直比应该的样子更沉重。React Query 的 staleTime 与 Lenis scroll 事件竞态，在用户快速切换路由时偶发 double-fetch。代码层面很小——一个 ref 锁 + invalidate 时机调整；体验层面却影响很大，列表不再闪烁，纸飞机航线也不再 jitter。写了一条 life record 提醒自己：性能 bug 有时藏在「感觉不对」而不是 profiler 红条里。",
+      "en": "Tracked down a state sync issue that had been making a flow feel heavier than it should. React Query staleTime raced Lenis scroll events on fast route changes, causing occasional double-fetch. Tiny code — a ref lock and invalidate timing — major UX: lists stopped flickering and the voyager path stopped jittering.",
+      "fr": "Problème de synchronisation entre staleTime React Query et les événements Lenis — double fetch sporadique. Un verrou ref et un timing d'invalidation : lists stables, trajectoire du voyager sans jitter."
+    },
+    "tags": {
+      "zh": [
+        "工程",
+        "调试",
+        "日常"
+      ],
+      "en": [
+        "engineering",
+        "debugging",
+        "daily"
+      ],
+      "fr": [
+        "ingénierie",
+        "débogage",
+        "quotidien"
+      ]
+    }
+  },
+  {
+    "id": "museum-color-study",
+    "title": {
+      "zh": "美术馆配色研究",
+      "en": "Museum color study",
+      "fr": "Étude de couleurs au musée"
+    },
+    "type": "moment",
+    "date": "2026-01-27",
+    "place": {
+      "zh": "VAG 画廊",
+      "en": "VAG Gallery",
+      "fr": "Galerie VAG"
+    },
+    "mood": {
+      "zh": "沉浸",
+      "en": "absorbed",
+      "fr": "absorbé"
+    },
+    "excerpt": {
+      "zh": "实体空间仍然能教会数字界面很多关于克制的事。",
+      "en": "Physical spaces still teach digital interfaces a lot about restraint.",
+      "fr": "Les espaces physiques enseignent encore beaucoup aux interfaces numériques sur la retenue."
+    },
+    "body": {
+      "zh": "那天我花在作品之间留白上的时间，比看作品本身还多。好的策展会留出足够的空间，让观看者自己抵达。我把 wall panel 的 accent 色从四处喷洒改成每卡片单一 accent 变量；Honor rail 的卡片宽度加大，让 detail 段落有 3–4 行可读长度。实体策展与 scroll-jacking 并不矛盾——两者都在控制视线速度。",
+      "en": "Spent more time looking at spacing between works than the works themselves. Good curation leaves room for the viewer to arrive. I tightened wall panels to one accent variable each and widened honor cards so detail paragraphs breathe across 3–4 lines. Physical curation and scroll choreography both control eye velocity.",
+      "fr": "Plus de temps sur les espaces entre les œuvres que sur les œuvres. Panneaux wall avec une seule variable accent ; cartes honor élargies pour des paragraphes detail lisibles."
+    },
+    "tags": {
+      "zh": [
+        "审美",
+        "空间",
+        "世界"
+      ],
+      "en": [
+        "aesthetics",
+        "space",
+        "world"
+      ],
+      "fr": [
+        "esthétique",
+        "espace",
+        "monde"
+      ]
+    }
+  },
+  {
+    "id": "nfx-compose-marathon",
+    "title": {
+      "zh": "Compose 编排马拉松",
+      "en": "Compose orchestration marathon",
+      "fr": "Marathon Compose"
+    },
+    "type": "ritual",
+    "date": "2025-11-14",
+    "place": {
+      "zh": "NAS 机柜旁",
+      "en": "Beside the NAS rack",
+      "fr": "Près du rack NAS"
+    },
+    "mood": {
+      "zh": "顽固",
+      "en": "stubborn",
+      "fr": "obstiné"
+    },
+    "excerpt": {
+      "zh": "第七次 `docker compose up` 终于全部绿灯。",
+      "en": "The seventh `docker compose up` finally went all green.",
+      "fr": "Le septième `docker compose up` enfin tout vert."
+    },
+    "body": {
+      "zh": "Kafka KRaft、Postgres 16、Traefik 3.x 与自定义 network alias 在同一份 compose 里握手。失败原因依次是：卷权限、listener advertised address、以及 healthcheck 间隔太短导致依赖顺序误判。最终写下 runbook：先 infra 网络，再 data plane，最后 edge。这类 ritual 重复多了，会变成 muscle memory——也是我想带给团队的文档习惯。",
+      "en": "Kafka KRaft, Postgres 16, Traefik 3.x, and custom network aliases finally shook hands in one compose file. Failures: volume permissions, advertised listeners, healthchecks firing too early. Runbook order: infra network → data plane → edge. Repetition becomes muscle memory — the documentation habit I want teams to inherit.",
+      "fr": "Kafka KRaft, Postgres 16, Traefik 3.x — échecs : permissions volumes, listeners, healthchecks trop agressifs. Runbook : réseau → data plane → edge."
+    },
+    "tags": {
+      "zh": [
+        "DevOps",
+        "NFX",
+        "ritual"
+      ],
+      "en": [
+        "devops",
+        "nfx",
+        "ritual"
+      ],
+      "fr": [
+        "devops",
+        "nfx",
+        "rituel"
+      ]
+    }
+  },
+  {
+    "id": "fpga-timing-closure",
+    "title": {
+      "zh": "时序收敛的最后一毫米",
+      "en": "Last millimeter of timing closure",
+      "fr": "Dernier millimètre de timing"
+    },
+    "type": "snapshot",
+    "date": "2024-06-02",
+    "place": {
+      "zh": "UBC 工程 lab",
+      "en": "UBC engineering lab",
+      "fr": "Labo ingénierie UBC"
+    },
+    "mood": {
+      "zh": "紧张",
+      "en": "tense",
+      "fr": "tendu"
+    },
+    "excerpt": {
+      "zh": "Setup slack 从 -0.8ns 爬到 +0.3ns 的那一晚。",
+      "en": "The night setup slack crawled from -0.8ns to +0.3ns.",
+      "fr": "La nuit où le setup slack est passé de -0,8 ns à +0,3 ns."
+    },
+    "body": {
+      "zh": "DDS + Nios II 设计在 50MHz 目标时钟下 slack 变红。加了 pipeline stage、重绑 multicycle constraint、把 combinational cloud 拆成 registered slice。Quartus TimeQuest 报告导出 PDF 附进 lab 提交。硬件教会软件工程师：有时不是算法慢，是路径太长。",
+      "en": "DDS + Nios II design failed setup at 50MHz. Added pipeline stage, multicycle constraints, split combinational cloud into registered slices. Exported TimeQuest PDF for lab submission. Hardware teaches software folks: sometimes the path is too long, not the algorithm.",
+      "fr": "DDS + Nios II : pipeline, contraintes multicycle, nuage combinatoire découpé. Leçon : chemin trop long, pas algorithme lent."
+    },
+    "tags": {
+      "zh": [
+        "FPGA",
+        "CPEN",
+        "硬件"
+      ],
+      "en": [
+        "fpga",
+        "cpen",
+        "hardware"
+      ],
+      "fr": [
+        "fpga",
+        "cpen",
+        "matériel"
+      ]
+    }
+  },
+  {
+    "id": "ice-ribbon-shift-log",
+    "title": {
+      "zh": "冰丝带夜班日志",
+      "en": "Ice Ribbon night shift log",
+      "fr": "Journal de nuit Ice Ribbon"
+    },
+    "type": "moment",
+    "date": "2024-08-24",
+    "place": {
+      "zh": "北京国家速滑馆",
+      "en": "Beijing National Speed Skating Oval",
+      "fr": "Patinoire olympique Pékin"
+    },
+    "mood": {
+      "zh": "高噪",
+      "en": "high noise",
+      "fr": "bruit élevé"
+    },
+    "excerpt": {
+      "zh": "现场工程是在观众的掌声里修电缆。",
+      "en": "Field engineering fixes cables under applause.",
+      "fr": "L'ingénierie sur site répare des câbles sous les applaudissements."
+    },
+    "body": {
+      "zh": "IRO 总决赛赛程临时调整，裁判席 USB hub 供电不足导致计分板 freeze。换 powered hub、重跑 calibrate script、用双语广播解释延迟。两小时后机器人再次上场，观众以为这是「特效」。我记下：可靠性是社交契约；工具必须能在公众面前失败并快速恢复。",
+      "en": "Finals schedule shifted; judge USB hub browns out, scoreboard freezes. Swapped powered hub, reran calibrate script, bilingual PA delay explanation. Robots ran again two hours later — audience thought it was a show effect. Reliability is a social contract.",
+      "fr": "Hub USB sous-dimensionné, tableau figé. Hub alimenté, recalibration, annonce bilingue. Fiabilité = contrat social."
+    },
+    "tags": {
+      "zh": [
+        "赛事",
+        "北京",
+        "机器人"
+      ],
+      "en": [
+        "events",
+        "beijing",
+        "robotics"
+      ],
+      "fr": [
+        "événements",
+        "pékin",
+        "robotique"
+      ]
+    }
+  },
+  {
+    "id": "pure-scan-permissions",
+    "title": {
+      "zh": "相机权限 UX 迭代",
+      "en": "Camera permission UX iteration",
+      "fr": "Itération UX permissions caméra"
+    },
+    "type": "note",
+    "date": "2024-10-05",
+    "place": {
+      "zh": "温哥华咖啡馆",
+      "en": "Vancouver café",
+      "fr": "Café Vancouver"
+    },
+    "mood": {
+      "zh": "实验",
+      "en": "experimental",
+      "fr": "expérimental"
+    },
+    "excerpt": {
+      "zh": "用户拒绝权限后，应用不能变成死胡同。",
+      "en": "After permission denial, the app cannot become a dead end.",
+      "fr": "Après refus de permission, l'app ne doit pas être un cul-de-sac."
+    },
+    "body": {
+      "zh": "Pure Scan 在 iOS 与 Android 上权限文案、fallback 手动输入 QR、以及「去设置」深链行为不一致。统一成三屏 flow：explain → request → graceful fallback，并在 Material 3 surface 上用 illustration 减少恐惧。Mobile 教会 web 工程师：state 不只是 store，也是 OS 对话框。",
+      "en": "Pure Scan permission copy, manual QR fallback, and settings deep links diverged on iOS vs Android. Unified three-screen flow: explain → request → graceful fallback with Material 3 illustrations. Mobile teaches web devs: state includes OS dialogs.",
+      "fr": "Flux unifié explain → request → fallback ; illustrations Material 3. L'état inclut les dialogues OS."
+    },
+    "tags": {
+      "zh": [
+        "Flutter",
+        "UX",
+        "mobile"
+      ],
+      "en": [
+        "flutter",
+        "ux",
+        "mobile"
+      ],
+      "fr": [
+        "flutter",
+        "ux",
+        "mobile"
+      ]
+    }
+  },
+  {
+    "id": "thesis-lit-review",
+    "title": {
+      "zh": "文献综述表格膨胀",
+      "en": "Literature review spreadsheet sprawl",
+      "fr": "Tableau de revue bibliographique"
+    },
+    "type": "note",
+    "date": "2026-02-01",
+    "place": {
+      "zh": "UBC 图书馆",
+      "en": "UBC library",
+      "fr": "Bibliothèque UBC"
+    },
+    "mood": {
+      "zh": "系统化",
+      "en": "systematic",
+      "fr": "systématique"
+    },
+    "excerpt": {
+      "zh": "第 47 篇论文终于出现可引用的 baseline 数字。",
+      "en": "Paper 47 finally had citeable baseline numbers.",
+      "fr": "L'article 47 avait enfin des chiffres de référence."
+    },
+    "body": {
+      "zh": "Senior thesis 方向落在 edge ML 与系统约束交叉区。Spreadsheet 列：模型大小、latency @ batch=1、能耗估计、部署假设。发现很多 SOTA 论文忽略 cold start 与 I/O 等待——这正是工程 thesis 可以补位的空白。把 reading 变成 structured data，写 intro 时就不怕空。",
+      "en": "Thesis at edge ML × systems constraints. Spreadsheet columns: model size, latency @ batch=1, energy estimate, deployment assumptions. Many SOTA papers ignore cold start and I/O wait — engineering thesis gap. Structured reading beats blank pages.",
+      "fr": "Thèse edge ML × contraintes système. Colonnes : taille modèle, latence, énergie. Les papers ignorent souvent le cold start."
+    },
+    "tags": {
+      "zh": [
+        "研究",
+        "thesis",
+        "ML"
+      ],
+      "en": [
+        "research",
+        "thesis",
+        "ml"
+      ],
+      "fr": [
+        "recherche",
+        "thèse",
+        "ml"
+      ]
+    }
+  },
+  {
+    "id": "badminton-thursday",
+    "title": {
+      "zh": "周四羽毛球",
+      "en": "Thursday badminton",
+      "fr": "Badminton du jeudi"
+    },
+    "type": "ritual",
+    "date": "2026-03-06",
+    "place": {
+      "zh": "社区中心",
+      "en": "Community center",
+      "fr": "Centre communautaire"
+    },
+    "mood": {
+      "zh": "清空",
+      "en": "cleared",
+      "fr": "dégagé"
+    },
+    "excerpt": {
+      "zh": "最好的 stack trace 清空方式是挥拍。",
+      "en": "Best stack trace reset is a swing.",
+      "fr": "Meilleur reset qu'un stack trace : un smash."
+    },
+    "body": {
+      "zh": "固定周四晚 8–10 点，不带 laptop。前一小时单打练 footwork，后一小时双打练沟通——engineering team 也是双打：cover 队友 blind spot。回家洗澡后反而常写出最干净的 commit message。Ritual 不是逃避工作，是给 subconscious 排程。",
+      "en": "Fixed Thu 8–10pm, no laptop. Hour singles footwork, hour doubles communication — eng teams are doubles: cover blind spots. Cleanest commit messages often come post-shower. Rituals schedule the subconscious.",
+      "fr": "Jeudi 20h–22h sans laptop. Simple/double — l'équipe ingénierie couvre les angles morts. Messages de commit plus propres après la douche."
+    },
+    "tags": {
+      "zh": [
+        "生活",
+        "ritual",
+        "运动"
+      ],
+      "en": [
+        "life",
+        "ritual",
+        "sport"
+      ],
+      "fr": [
+        "vie",
+        "rituel",
+        "sport"
+      ]
+    }
+  },
+  {
+    "id": "gsap-scrolltrigger-debug",
+    "title": {
+      "zh": "ScrollTrigger 刷新地狱",
+      "en": "ScrollTrigger refresh hell",
+      "fr": "Enfer ScrollTrigger refresh"
+    },
+    "type": "snapshot",
+    "date": "2026-03-11",
+    "place": {
+      "zh": "Lsr-Web repo",
+      "en": "Lsr-Web repo",
+      "fr": "Repo Lsr-Web"
+    },
+    "mood": {
+      "zh": "较劲",
+      "en": "determined",
+      "fr": "déterminé"
+    },
+    "excerpt": {
+      "zh": "内容变长之后，pin 距离不算准才是常态。",
+      "en": "Once content grows, wrong pin distance is the norm.",
+      "fr": "Quand le contenu grossit, la distance de pin fausse devient la norme."
+    },
+    "body": {
+      "zh": "Intro wall 从 6 张加到 12 张 panel 后，horizontal scrub 距离没更新，纸飞机与 wall progress 不同步。Fix：`invalidateOnRefresh: true`、dist 函数读 live scrollWidth、mock 数据到位后再 `ScrollTrigger.refresh()`。用户说「看不出动画」Often 不是 GSAP 坏了，是页面太短。",
+      "en": "Intro wall went from 6 to 12 panels; horizontal scrub distance stale, voyager desynced from wall progress. Fix: invalidateOnRefresh, dist() reads live scrollWidth, ScrollTrigger.refresh() after mock data lands. \"Can't see animation\" often means page too short.",
+      "fr": "Mur intro 6→12 panneaux : distance scrub obsolète. invalidateOnRefresh, dist() live, refresh après mock."
+    },
+    "tags": {
+      "zh": [
+        "GSAP",
+        "前端",
+        "调试"
+      ],
+      "en": [
+        "gsap",
+        "frontend",
+        "debug"
+      ],
+      "fr": [
+        "gsap",
+        "frontend",
+        "debug"
+      ]
+    }
+  },
+  {
+    "id": "coffee-shop-deploy",
+    "title": {
+      "zh": "咖啡馆里的 prod 热修复",
+      "en": "Café prod hotfix",
+      "fr": "Hotfix prod au café"
+    },
+    "type": "moment",
+    "date": "2025-09-18",
+    "place": {
+      "zh": "W Broadway",
+      "en": "W Broadway",
+      "fr": "W Broadway"
+    },
+    "mood": {
+      "zh": " adrenaline",
+      "en": "adrenaline",
+      "fr": "adrénaline"
+    },
+    "excerpt": {
+      "zh": "Traefik 路由写错，三个子站同时 404。",
+      "en": "Wrong Traefik rule, three subsites 404 at once.",
+      "fr": "Règle Traefik erronée, trois sites en 404."
+    },
+    "body": {
+      "zh": "手机 alert：ACME 续期后 router priority 被新 label 覆盖。笔记本 tethering，SSH 进 NAS，git revert compose override，rolling restart edge stack。15 分钟恢复。写下 postmortem：priority 文档化、staging compose diff 必跑。Homelab 也是 prod 心态训练。",
+      "en": "Phone alert: post-ACME router priority overwritten by new label. Tethered laptop, SSH NAS, revert compose override, rolling edge restart. 15 min recovery. Postmortem: document priorities, mandatory staging compose diff. Homelab trains prod mindset.",
+      "fr": "Alerte mobile : priorité router écrasée après ACME. Revert, restart edge, 15 min. Postmortem et diff staging obligatoire."
+    },
+    "tags": {
+      "zh": [
+        "Traefik",
+        "运维",
+        "incident"
+      ],
+      "en": [
+        "traefik",
+        "ops",
+        "incident"
+      ],
+      "fr": [
+        "traefik",
+        "ops",
+        "incident"
+      ]
+    }
+  },
+  {
+    "id": "delta-rain-first-day",
+    "title": {
+      "zh": "Delta 第一天雨",
+      "en": "First rain day in Delta",
+      "fr": "Première pluie à Delta"
+    },
+    "type": "moment",
+    "date": "2022-09-08",
+    "place": {
+      "zh": "Ladner",
+      "en": "Ladner",
+      "fr": "Ladner"
+    },
+    "mood": {
+      "zh": "陌生",
+      "en": "foreign",
+      "fr": "étranger"
+    },
+    "excerpt": {
+      "zh": "伞不够，但地图够了。",
+      "en": "Umbrella insufficient, map sufficient.",
+      "fr": "Parapluie insuffisant, carte suffisante."
+    },
+    "body": {
+      "zh": "落地 BC 后第一次独自走路上学。雨里辨认公交号、练习 small talk、把课程表截图设成锁屏。那天开始写英文 diary——后来变成这些 life records 的原型。移民不是事件，是每天小决策的积分。",
+      "en": "First solo walk to school after landing in BC. Rain, bus numbers, small talk practice, timetable wallpaper. Started an English diary that became these life records. Immigration is daily decisions integrated.",
+      "fr": "Première marche solo sous la pluie. Journal anglais devenu ces life records. L'immigration s'intègre au quotidien."
+    },
+    "tags": {
+      "zh": [
+        "移民",
+        "成长",
+        "记录"
+      ],
+      "en": [
+        "immigration",
+        "growth",
+        "records"
+      ],
+      "fr": [
+        "immigration",
+        "croissance",
+        "traces"
+      ]
+    }
+  }
+]

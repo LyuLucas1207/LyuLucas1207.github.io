@@ -1,0 +1,26 @@
+.list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+  align-items: center;
+}
+
+.tag {
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  transition: color 0.28s ease, text-shadow 0.28s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 10px rgba(var(--color-primary-rgb), 0.38);
+}
+
+.tag:not(:last-child)::after {
+  content: '·';
+  margin-left: 0.45rem;
+  opacity: 0.55;
+}

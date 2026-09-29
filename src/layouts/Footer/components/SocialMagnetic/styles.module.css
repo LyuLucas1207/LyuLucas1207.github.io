@@ -1,0 +1,51 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  justify-content: flex-end;
+}
+
+.magneticWrap {
+  display: inline-block;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.2rem 0;
+  color: var(--color-fg-text);
+  text-decoration: none;
+}
+
+.linkRoll {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 1.05em;
+}
+
+.linkLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.linkLabel + .linkLabel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: var(--color-primary);
+}
+
+.link:hover .linkLabel {
+  transform: translateY(-100%);
+}
+
+@media (max-width: 640px) {
+  .root {
+    justify-content: flex-start;
+  }
+}

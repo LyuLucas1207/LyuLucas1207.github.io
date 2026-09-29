@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 5vh, 4rem) clamp(1.4rem, 5vw, 5rem) clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.grid line {
+  stroke: color-mix(in srgb, var(--color-border-2) 80%, transparent);
+  stroke-width: 0.5;
+}
+
+.crosshair {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.crosshairH,
+.crosshairV {
+  position: absolute;
+  background: rgba(var(--color-primary-rgb), 0.35);
+}
+
+.crosshairH {
+  left: 0;
+  right: 0;
+  top: 58%;
+  height: 1px;
+  transform-origin: left center;
+}
+
+.crosshairV {
+  top: 0;
+  bottom: 0;
+  left: 72%;
+  width: 1px;
+  transform-origin: center top;
+}
+
+.topBar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: clamp(1rem, 2.5vh, 1.6rem);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.index {
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-fg-muted);
+}
+
+.headline {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: 11ch;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(3.2rem, 12vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-fg-heading);
+  transition: color 0.35s ease, text-shadow 0.35s ease;
+}
+
+.headline:hover {
+  color: color-mix(in srgb, var(--color-primary) 70%, var(--color-fg-heading) 30%);
+  text-shadow: 0 0 18px rgba(var(--color-primary-rgb), 0.22);
+}
+
+.dockPanel {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(1.5rem, 4vh, 2.5rem);
+  margin-left: auto;
+  width: min(28rem, 100%);
+  padding: clamp(1.1rem, 2vw, 1.6rem);
+  border-left: 2px solid var(--color-primary);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+}
+
+.panelTitle {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.28;
+  color: var(--color-fg-text);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.panelTitle:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 14px rgba(var(--color-primary-rgb), 0.2);
+}
+
+.panelBody {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-fg-muted);
+}
+
+@media (max-width: 860px) {
+  .crosshairV {
+    left: 50%;
+  }
+
+  .dockPanel {
+    margin-left: 0;
+    width: 100%;
+  }
+}
